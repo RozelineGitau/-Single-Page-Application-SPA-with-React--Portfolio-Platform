@@ -1,16 +1,136 @@
-# React + Vite
+# Project Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React single-page application for showcasing projects in a portfolio.
 
-Currently, two official plugins are available:
+This project was created as part of a React learning assignment. It demonstrates basic React concepts such as components, state, props, event handling, forms, and simple styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* View a list of projects
+* Search for projects by title
+* Add a new project using a form
+* Display project information in cards
+* Use React state to manage projects and search
+* Use props to pass information between components
+* Simple and responsive styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+* React
+* JavaScript
+* Vite
+* HTML
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Structure
+
+```text
+project-showcase/
+├── src/
+│   ├── components/
+│   │   ├── ProjectForm.jsx
+│   │   ├── ProjectList.jsx
+│   │   └── ProjectCard.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/RozelineGitau/-Single-Page-Application-SPA-with-React--Portfolio-Platform.git
+```
+
+### 2. Go into the project folder
+
+```bash
+cd project-showcase
+```
+
+### 3. Install the dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will then be available through the local address shown in the terminal.
+
+## How It Works
+
+The application is divided into small React components.
+
+### App
+
+The `App` component is the main component. It manages the project data and search functionality.
+
+### ProjectForm
+
+The `ProjectForm` component allows the user to enter information about a new project and add it to the project list.
+
+### ProjectList
+
+The `ProjectList` component displays the projects and passes project information to the project cards.
+
+### ProjectCard
+
+The `ProjectCard` component displays the details of an individual project.
+
+## React Concepts Demonstrated
+
+### Components
+
+The application is divided into reusable components such as:
+
+* `ProjectForm`
+* `ProjectList`
+* `ProjectCard`
+
+### State
+
+React `useState` is used to keep track of information such as the projects and search input.
+
+### Props
+
+Props are used to pass project information from one component to another.
+
+### Event Handling
+
+The application handles events such as:
+
+* Form submission
+* Button clicks
+* Text input
+* Search input
+
+## Learning Objectives
+
+Through this project, I practiced:
+
+* Creating React components
+* Managing state using `useState`
+* Passing data using props
+* Handling user events
+* Creating forms in React
+* Filtering displayed data
+* Styling a React application with CSS
+* Using Vite to run a React application
+
+## Author
+
+**Rozeline Gitau**
+
+This project was created for learning and practicing React development.
